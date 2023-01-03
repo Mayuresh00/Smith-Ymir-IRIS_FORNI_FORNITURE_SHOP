@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+    font-family: 'Montserrat';
+}
+
+
+/* ------------------- INICIO DE ESTILOS DEL HEADER ------------------- */
+
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../pictures/AdobeStock_514413625.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+
+.header .logo{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.header .nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.header .nav_links li:hover{
+    transform: scale(1.1);
+}
+
+.header .boton{
+    font-size: medium;
+    cursor: pointer;
+    width: 8%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1.5em;
+    /* border: 1px solid rgb(90, 90, 90); */
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ------------------- FIN DE ESTILOS DEL HEADER ------------------- */
+
+
+/* ------------------- INICIO DE ESTILOS DEL INDEX ------------------- */
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    
+}
+
+.descrip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.circulo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-top: 25%;
+    border: none;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.circulo .texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    
+}
+
+.circulo:hover{
+    transform: scale(1.1);
+}
+
+.circulo .texto a{
+    color: rgb(100, 100, 100);
+}
+
+/* ------------------- FIN DE ESTILOS DEL INDEX ------------------- */
+
+/* ------------------- INICIO DE ESTILOS DEL CARRUSEL ------------------- */
+
+.carrusel{
+    margin: 5% 5% 2% 5%;
+}
+
+
+.primero{
+    margin-top: 30px;
+    font-size: 3em;
+    margin-left: 15%;
+}
+
+.segundo{
+    font-size: 2em;
+    margin-left: 25%;
+    margin-top: -15px;
+}
+
+.line_one{
+    border: 1px solid;
+    margin: 0% 7% 2% 7%;
+}
+
+.texto2{
+    width: fit-content;
+    font-size: 2em;
+    margin-left: 15%;
+}
+
+.cartas{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_card{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.card {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}

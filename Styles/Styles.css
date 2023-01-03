@@ -1,0 +1,427 @@
+@import url("./node_modules/bootstrap/scss/bootstrap.scss");/*# sourceMappingURL=Styles.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+    font-family: 'Montserrat';
+}
+
+
+/* ------------------- INICIO DE ESTILOS DEL HEADER ------------------- */
+
+.principal{
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../pictures/AdobeStock_514413625.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.header{
+    background-color: #92A68D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px 10%;
+    z-index: 2;
+    flex-wrap: wrap;
+
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.header .logo{
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+}
+
+.logo{
+    color: #fff;
+    font-size:1.7em;
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.logo_line1{
+    display:absolute;
+    border: 1px solid #fff;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.logo_line2{
+    display:absolute;
+    border: 1px solid #fff;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.header .nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.header .nav_links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav_links li:hover{
+    transform: scale(1.1);
+}
+
+.header .boton{
+    font-size: medium;
+    cursor: pointer;
+    width: 8%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1.5em;
+    /* border: 1px solid rgb(90, 90, 90); */
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -15px;
+    margin-right: -7%;
+    transition: all 0.3s;
+}
+
+.boton:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.boton_cerrar{
+    font-size: medium;
+    cursor: pointer;
+    width: 8%;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1.5em;
+    /* border: 1px solid rgb(90, 90, 90); */
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -15px;
+    transition: all 0.3s
+}
+
+.boton_cerrar:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ------------------- FIN DE ESTILOS DEL HEADER ------------------- */
+
+
+/* ------------------- INICIO DE ESTILOS DEL INDEX ------------------- */
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    
+}
+
+.descrip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.circulo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-top: 25%;
+    border: none;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.circulo .texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+.circulo:hover{
+    transform: scale(1.1);
+}
+
+.circulo .texto a{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
+
+/* ------------------- FIN DE ESTILOS DEL INDEX ------------------- */
+
+/* ------------------- INICIO DE ESTILOS DEL CARRUSEL ------------------- */
+
+.carrusel{
+    margin: 5% 5% 2% 5%;
+}
+
+
+.primero{
+    margin-top: 30px;
+    font-size: 3em;
+    margin-left: 15%;
+}
+
+.segundo{
+    font-size: 2em;
+    margin-left: 25%;
+    margin-top: -15px;
+}
+
+.line_one{
+    border: 1px solid;
+    margin: 0% 7% 2% 7%;
+}
+
+.texto2{
+    width: fit-content;
+    font-size: 2em;
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
+
+/* ------------------- INICIO DE ESTILOS DEL LAS CARTAS ------------------- */
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 90%;
+
+}
+
+.column{
+    margin: 1% 10% 10% 10%;
+}
+
+.row img{
+    width: 400px;
+    height: 500px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+    box-shadow: #7a7a7a;
+}
+
+
+/* .cartas{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .productos .cartas{
+    max-width: 800px;
+    max-height: 800px;
+} */
+
+
+
+/* .row img{
+    width: 100%;
+
+} */
+
+
+/* .row .cartas{
+    margin-left: 5%;
+    max-height: 400px;
+    border: 1px solid black;
+} */
+
+/* .btn_ver{
+    font-family: 'Montserrat';
+    width: 5%;
+    height: 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #92A68D;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+} */
+
+/* .btn_ver:hover{
+    text-decoration: none;
+    color:#fff;
+} */
+
+/* .productos .card .card-body{
+    height: -150px;
+} */
+
+/* ------------------- FIN DE ESTILOS DEL LAS CARTAS ------------------- */
+
+/* ------------------- INICIO DE ESTILOS DEL FOOTER ------------------- */
+
+footer{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: black;
+    margin-top: 10%;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+/* .box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+} */
+
+.box__copyright p{
+    margin-top: 2px;
+    color: #242424;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.line_right{
+    margin: 20px 0px 20px 0;
+    border-right: 2px solid #fff;
+    max-height: 165px;
+}
+
+.line_left{
+    margin: 25px 0px 20px 0px ;
+    max-height: 165px;
+    border-left: 2px solid #fff;
+}
+
+.logo_footer{
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.bold_footer{
+    font-weight: bold;
+}
+
+.logo_footer:hover{
+    transform: scale(1.1);
+}
+
+.logo_line1_footer{
+    display:absolute;
+    border: 1px solid #fff;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.logo_line2_footer{
+    display:absolute;
+    border: 1px solid #fff;
+    height: 40px;
+    margin-left: 5px;
+}
+/* ------------------- FIN DE ESTILOS DEL FOOTER ------------------- */
