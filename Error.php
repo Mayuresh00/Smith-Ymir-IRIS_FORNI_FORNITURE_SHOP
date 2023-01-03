@@ -161,7 +161,7 @@ if (!isset($_SESSION['nombre_global'])) {
     .no_contenido{
         color: #fff;
         margin: 10% 10% 10% 25%;
-        font-size: 100px;
+        font-size: 4em;
         font-weight: bolder;
     }
 
@@ -478,8 +478,8 @@ if (!isset($_SESSION['nombre_global'])) {
 
 
 <div class="no_contenido">
-    <p>¡ERROR 204!</p>
-    <P>CONTENIDO NO ENCONTRADO.</P>
+    <p>¡NO DISPONIBLE!</p>
+    <P>INFORMACIÓN DEL PRODUCTO NO ENCONTRADA.</P>
 </div>
 
 
