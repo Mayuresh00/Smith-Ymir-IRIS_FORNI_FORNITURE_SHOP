@@ -72,9 +72,9 @@
 		?>
 		<input type="number" name="idd" value="<?php echo $id?>">
 		<?php 
-		$sql="INSERT INTO usuarios (id_user, nombre_usuario, apellido_usuario, direccion, telefono, cod_rol, departamento, ciudad, codigo_postal, email, contrasena) values (:id_usua, :name_usua, :last_name_usua , :address_usua, :tele_usua, :role_usua, :depart , :city_usua, :postal_cod ,:email_usua, :pass_usua)";
+		$sql="INSERT INTO usuarios (id_user, nombre_usuario, apellido_usuario, direccion, telefono, cod_rol, departamento, ciudad, codigo_postal, email, contrasena) values (:id_usua, :name_usua, :last_name_usua , :address_usua, :tele_usua, :role_usua, :depart , :city_usua, :postal_cod ,:email_usua, :password_usua)";
 		$resultado=$conexiondb->prepare($sql);//$conexiondb es el nombre de la conexión
-		$resultado->execute(array(":id_usua"=>$id,  "nomb_usua"=>$nombre, ":last_name_usua"=>$apellido, ":address_usua"=>$address, ":tele_usua"=>$tele, ":role_usua"=>$rol, ":depart"=>$departamento, ":city_usua"=>$city, ":postal_cod"=>$codigo_postal, ":email_usua"=>$email, ":password_usua"=>$pass_cifrado));
+		$resultado->execute(array(":id_usua"=>$id,  ":name_usua"=>$nombre, ":last_name_usua"=>$apellido, ":address_usua"=>$address, ":tele_usua"=>$tele, ":role_usua"=>$rol, ":depart"=>$departamento, ":city_usua"=>$city, ":postal_cod"=>$codigo_postal, ":email_usua"=>$email, ":password_usua"=>$pass_cifrado));
 
 		header("Location:crud_usuario.php");
 	}
