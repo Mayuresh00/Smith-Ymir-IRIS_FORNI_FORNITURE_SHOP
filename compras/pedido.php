@@ -571,7 +571,7 @@ if ($registro = $query -> fetch(PDO::FETCH_ASSOC)) {
     <?php
     } else {
         ?>
-        <script>alert ("Error 204! No se encontró información del produto.")</script>
+        <script>alert ("Error! No se encontró información del produto.")</script>
         <script type="text/javascript">
             window.location.href = "../Error.php";
         </script>

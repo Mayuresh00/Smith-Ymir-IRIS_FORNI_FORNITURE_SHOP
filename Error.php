@@ -464,7 +464,7 @@ if (!isset($_SESSION['nombre_global'])) {
         <?php 
             if (!isset($_SESSION['nombre_global'])) {
                 ?>
-                    <a class="boton" href="../Login/login.php">Ingresar<button></button></a>
+                    <a class="boton" href="./Login/login.php">Ingresar<button></button></a>
                 <?php
             }else{
                 ?>

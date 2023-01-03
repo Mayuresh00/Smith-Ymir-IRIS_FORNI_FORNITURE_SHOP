@@ -79,7 +79,7 @@ $resultado->execute(array(":co"=>$busca));
 								<td><input class="form-control form-control-sm" type="text" name="user_city" value="<?php echo $registro['ciudad']?>"></td>
 								<td><input class="form-control form-control-sm" type="number" name="user_postal" value="<?php echo $registro['codigo_postal']?>"></td>
 								<td><input class="form-control form-control-sm" type="text" name="user_email" value="<?php echo $registro['email']?>"></td>
-								<td><input class="form-control form-control-sm" type="password" name="user_password" value="**********"></td>
+								<td><input class="form-control form-control-sm" type="password" name="user_password" placeholder="ingrese una contraseña"></td>
 							
 								<td><select class="form-select form-select-sm" name="user_role">
 											<?php
