@@ -5,7 +5,7 @@ if (!isset($_SESSION['nombre_global'])) {
     $_SESSION['cod_global']= null;
     $_SESSION['nombre_global']= null;
     $_SESSION['id_global']= null;
-    header("Location:../Login/login.php");
+    // header("Location:../Login/login.php");
 } else {
     $_SESSION['cod_global'];
     $_SESSION['nombre_global'];
