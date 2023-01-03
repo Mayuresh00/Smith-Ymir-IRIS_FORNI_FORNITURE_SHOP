@@ -200,6 +200,7 @@ $_SESSION['id_global']=$registro['id_user'];
         <a href="../index.php"target=_blank>Generar Pedido</a>
         <a href="../compras/ver_pedidos.php"target=_blank>Consultar Pedidos</a>
         <a href="../usuarios/mis_pedidos.php"target=_blank>Mis Pedidos</a>
+        <a href="../usuarios/editar_info.php"target=_blank>Editar información</a>
     </nav>
     <label for="icon_menu">✖️</label>
         </div>
